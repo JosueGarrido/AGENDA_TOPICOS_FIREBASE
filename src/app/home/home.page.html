@@ -16,7 +16,7 @@
       <ion-item *ngFor="let booking of Bookings" class="user-list">
         <ion-label>
           <h5>
-            <ion-icon name="person" style="color: darkgoldenrod"></ion-icon> {{booking.name}}
+            <ion-icon name="person" style="color: darkgoldenrod"></ion-icon> {{booking.name}} {{booking.lastname}}
           </h5>
 
           <h5>
@@ -24,6 +24,9 @@
           </h5>
           <p>
             <ion-icon name="mail" style="color: cadetblue"></ion-icon> {{booking.email}}
+          </p>
+          <p>
+            <ion-icon name="location-outline"></ion-icon> {{booking.direction}}
           </p>
         </ion-label>
 

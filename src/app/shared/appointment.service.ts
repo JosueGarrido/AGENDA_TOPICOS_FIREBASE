@@ -19,7 +19,7 @@ export class AppointmentService {
       lastname: apt.lastname,
       email: apt.email,
       mobile: apt.mobile,
-      direccion: apt.direccion,
+      direction: apt.direction,
       date: apt.date
     })
   }
@@ -43,7 +43,7 @@ export class AppointmentService {
       lastname: apt.lastname,
       email: apt.email,
       mobile: apt.mobile,
-      direccion: apt.direccion,
+      direction: apt.direction,
       date: apt.date
     })
   }

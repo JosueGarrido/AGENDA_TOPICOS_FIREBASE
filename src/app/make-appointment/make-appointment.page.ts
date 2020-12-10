@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { FormGroup, FormBuilder } from '@angular/forms';
-import { AppointmentService } from './../shared/appointment.service';
+import { AppointmentService } from '../shared/appointment.service';
 
 @Component({
   selector: 'app-make-appointment',
@@ -18,13 +18,17 @@ export class MakeAppointmentPage implements OnInit {
     public fb: FormBuilder
   ) { }
 
+  public event = {
+    month: '1990-02-19'
+  }
+
   ngOnInit() {
     this.bookingForm = this.fb.group({
       name: [''],
       lastname: [''],
       email: [''],
       mobile: [''],
-      direccion: [''],
+      direction: [''],
       date: ['']
     })
   }

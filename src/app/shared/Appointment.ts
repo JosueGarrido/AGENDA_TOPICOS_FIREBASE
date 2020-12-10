@@ -4,6 +4,6 @@ export class Appointment {
     lastname: string;
     email: string;
     mobile: number;
-    direccion: string;
+    direction: string;
     date: string;
 }

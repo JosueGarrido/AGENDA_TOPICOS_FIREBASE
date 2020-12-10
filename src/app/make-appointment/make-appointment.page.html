@@ -4,7 +4,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content class="outer-content">
   <ion-list lines="full">
     <form [formGroup]="bookingForm" (ngSubmit)="formSubmit()">
       <ion-item>
@@ -31,14 +31,13 @@
 
       <ion-item>
         <ion-label position="floating">Direccion</ion-label>
-        <ion-input formControlName="direccion" type="text" required>
+        <ion-input formControlName="direction" type="text" required>
         </ion-input>
       </ion-item>
 
       <ion-item>
-        <ion-label position="floating">Fecha</ion-label>
-        <ion-input formControlName="date" type="text" required>
-        </ion-input>
+        <ion-label>Fecha de Nacimiento</ion-label>
+        <ion-datetime formControlName="date" displayFormat="MMM DD YYYY" [(ngModel)]="event.month"></ion-datetime>
       </ion-item>
 
       <ion-row>
@@ -49,3 +48,4 @@
     </form>
   </ion-list>
 </ion-content>
+
